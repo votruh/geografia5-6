@@ -1,0 +1,56 @@
+:root {
+  color-scheme: light;
+  --page: #e9e5d4;
+  --board: #f6f1e3;
+  --panel: #fffaf0;
+  --edge: #bac8ae;
+  --chalk: #183833;
+  --dim: #4e685e;
+  --faint: #5d7769;
+  --task: #aa412c;
+  --quiz: #1b5947;
+  --good: #166951;
+  --bad: #a43725;
+  --on-fill: #ffffff;
+  --rule: #d5ddc6;
+  --track: #d8ddc4;
+  --track-ask: #b8cdb1;
+  --bar-edge: #c4ccb6;
+  --hover: #e2ead5;
+  --veil: #e9e5d4;
+  --vignette: transparent;
+  --math-font: "Segoe UI", Arial, sans-serif;
+}
+
+:root #frame { box-shadow: 0 0 0 1px var(--edge), 0 22px 64px #243d2222; }
+:root .cover { background: #f6f1e3eb; }
+:root .cover-t { margin-bottom: 30px; }
+:root .card.side {
+  padding: 24px 28px 25px;
+  box-shadow: 0 10px 35px #2239261c;
+}
+:root .side .prompt { font-size: 29px; }
+:root .side .fb { max-height: 165px; }
+:root .side .btn { min-height: 52px; font-size: 22px; }
+:root .side .opt { min-width: 100px; justify-content: center; }
+:root .side .geo-control { padding: 12px 5px 4px; clear: both; }
+.geo-readout { display: block; color: var(--quiz); font-size: 29px; font-weight: 750; }
+.geo-slider { display: block; width: 100%; min-height: 54px; margin: 8px 0 0; accent-color: var(--task); cursor: ew-resize; }
+.geo-slider:focus-visible { outline: 3px solid var(--task); outline-offset: 4px; }
+:root .opt.bad[aria-pressed="true"] { background: #ffe6dc; }
+
+@media (orientation: portrait) and (max-width: 640px) {
+  :root body::after {
+    content: 'Для удобства поверни устройство горизонтально.';
+    position: fixed;
+    left: 8%;
+    right: 8%;
+    top: calc(50% + 33vw);
+    text-align: center;
+    color: var(--dim);
+    font-size: 14px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  :root .cover > div > * { animation: none; }
+}

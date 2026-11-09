@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 448" role="img">
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#c4d1ae" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="448" fill="#e7ecd4"/>
+  <rect width="640" height="448" fill="url(#grid)"/>
+  <g fill="#d8e3be" stroke="#b2c499" stroke-width="1.4">
+    <path d="M-20 106Q93 11 186 55T359 93Q324 182 188 182T-20 292Z"/>
+    <path d="M-20 134Q101 37 177 78T327 103Q289 161 175 156T-20 257Z"/>
+    <path d="M-20 168Q100 64 165 102T295 111Q258 136 165 133T-20 224Z"/>
+    <path d="M660 148Q539 96 466 148T413 318Q466 379 660 361Z"/>
+    <path d="M660 173Q555 121 491 164T443 305Q500 350 660 338Z"/>
+    <path d="M660 205Q572 147 520 183T476 295Q518 324 660 311Z"/>
+  </g>
+  <path d="M-15 366C113 415 187 360 259 361S401 444 513 393S589 335 655 356" fill="none" stroke="#78a8a8" stroke-width="41"/>
+  <path d="M-15 366C113 415 187 360 259 361S401 444 513 393S589 335 655 356" fill="none" stroke="#a8cecb" stroke-width="35"/>
+  <path d="M-15 366C113 415 187 360 259 361S401 444 513 393S589 335 655 356" fill="none" stroke="#d1e7dc" stroke-width="1.5" stroke-dasharray="5 12"/>
+  <path d="M79 319H274L447 146L534 62" fill="none" stroke="#fdf7e6" stroke-linecap="round" stroke-width="9"/>
+  <path d="M79 319H274L447 146L534 62" fill="none" stroke="#a3482e" stroke-linecap="round" stroke-width="3.5" stroke-dasharray="5 9"/>
+  <g fill="#fff8e9" stroke="#a3482e" stroke-width="3">
+    <circle cx="79" cy="319" r="8"/><circle cx="274" cy="319" r="8"/><circle cx="534" cy="62" r="8"/>
+  </g>
+  <g transform="translate(395 236)">
+    <circle cx="0" cy="8" r="136" fill="#334c35" opacity=".12"/>
+    <circle r="136" fill="#fcf7e7" stroke="#536e58" stroke-width="2"/>
+    <circle r="124" fill="none" stroke="#a6b89a"/>
+    <circle r="89" fill="none" stroke="#afbea0" stroke-dasharray="1 6" stroke-width="6"/>
+    <circle r="76" fill="none" stroke="#c4cfb6"/>
+    <path d="M0-72L15-15 72 0 15 15 0 72-15 15-72 0-15-15Z" fill="#d7dfc7" stroke="#98ab89"/>
+    <path d="M0-55V55M-55 0H55" stroke="#91a88f" stroke-width="1"/>
+    <path d="M0-63L13 13 0 4-13 13Z" fill="#aa412c" transform="rotate(38)"/>
+    <path d="M0 63L13-13 0-4-13-13Z" fill="#27594a" transform="rotate(38)"/>
+    <circle r="5" fill="#fcf7e7" stroke="#355d50" stroke-width="1.5"/>
+    <g font-family="Segoe UI,Arial,sans-serif" font-weight="750" font-size="22" text-anchor="middle" fill="#27594a">
+      <text y="-99" fill="#aa412c">С</text><text x="107" y="8">В</text><text y="116">Ю</text><text x="-107" y="8">З</text>
+    </g>
+  </g>
+  <g transform="translate(53 50)" fill="#315744" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2">
+    <text y="0">ПОЛЕВОЙ</text><text y="19">МАРШРУТ</text>
+    <path d="M0 35H75" stroke="#315744"/>
+  </g>
+</svg>

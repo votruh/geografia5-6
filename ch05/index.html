@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e9e5d4">
+  <title>Географические открытия XVII–XX вв. · Полевой атлас</title>
+  <link rel="stylesheet" href="../lib/engine.css">
+  <style>@view-transition { navigation: none; }</style>
+</head>
+<body>
+  <script src="../lib/engine.js"></script>
+  <script src="audio/ru/timings.js?v=2"></script>
+  <script src="world.js"></script>
+  <script src="lesson.js"></script>
+  <script>
+'use strict';
+const CHAPTER = { number: 5, title: 'Географические открытия XVII–XX вв.', minutes: 7, language: 'ru', lead: false };
+const BEATS = [
+  ['intro', 'Как читать открытия', m => seaIntro(m('question'), m('lens'))],
+  ['drake', 'Дрейк', m => seaDrake(m('route'), m('passage'), m('trade'))],
+  ['q-drake', 'Найди пролив', () => seaLocate('drake'), { dur: .5, ask: done => seaLocateQuiz('drake', done) }],
+  ['atlases', 'Ортелий и Меркатор', m => seaAtlases(m('ortelius'), m('mercator'), m('distort'))],
+  ['barents', 'Баренц', m => seaBarents(m('north'), m('winter'), m('name'))],
+  ['tasman', 'Янсзон и Тасман', m => seaTasman(m('people'), m('janszoon'), m('tasman'))],
+  ['cook', 'Кук', m => seaCook(m('map'), m('botany'), m('claim'))],
+  ['q-cook', 'Найди берег', () => seaLocate('cook'), { dur: .5, ask: done => seaLocateQuiz('cook', done) }],
+  ['antarctica', 'Антарктида', m => seaAntarctica(m('ships'), m('ice'), m('coast'))],
+  ['humboldt', 'Гумбольдт', m => seaHumboldt(m('climb'), m('belts'), m('compare'))],
+  ['continents', 'Замбези и Центральная Азия', m => seaContinents(m('africa'), m('asia'), m('evidence'))],
+  ['passages', 'Два прохода', m => seaPassages(m('east'), m('west'), m('ice'))],
+  ['q-passage', 'Проверь проходы', () => seaPassages(0, .1, .2, true), { dur: .5, ask: seaQuickPassage }],
+  ['poles', 'Два полюса', m => seaPoles(m('peary'), m('south'), m('north'))],
+  ['survey', 'Хребет Черского', m => seaSurvey(m('range'), m('measure'))],
+  ['kontiki', '«Кон-Тики»', m => seaKontiki(m('raft'), m('landing'), m('claim'))],
+  ['wrap', 'Что изменилось', m => seaWrap(m('routes'), m('study'), m('test'))],
+  ['practice', 'Итоговая проверка', seaPracticeStage, { dur: .5, ask: seaFinalQuiz }],
+  ['finish', 'Итог', () => seaHeading('ПОЛЕВОЙ АТЛАС  /  ИТОГ', 'Экспедиция завершена'), { dur: .5, ask: seaFinish }],
+].map(([id, title, run, extra]) => ({ id, title, run, ...extra }));
+
+boot();
+$('bHome').href = '../index.html#ch05';
+  </script>
+</body>
+</html>
